@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from jobs-pal.com/my-account.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Jul 2022 04:28:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>Jobs Pal Ltd</title>
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/orange.css" id="colors">
+<style>
+	body{
+		zoom: 90%;
+	}
+</style>
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+
+
+
+<div id="wrapper">
+
+<!-- =========== PRE-LOADER SECTION START =========== -->
+<!-- <h1>this is a h1</h1> -->
+<div class="preloader">
+	<div class="status">
+	  <div class="rect1"></div> <!-- BARS CAN BE ADDED OR REMOVED -->
+	  <div class="rect2"></div>
+	  <div class="rect3"></div>
+	  <div class="rect4"></div>
+	</div>
+</div>
+<!-- =========== PRE-LOADER SECTION END =========== -->
+
+
+<!-- Header
+================================================== -->
+<header class="full-width">
+<div class="container">
+	<div class="sixteen columns">
+	
+		<!-- Logo -->
+		<div id="logo">
+			<h1><a href="index.html"><img src="images/finallogo.png" alt="Jobs Pal Ltd" /></a></h1>
+		</div>
+
+		<!-- Menu -->
+		<nav id="navigation" class="menu">
+			<ul id="responsive" style="padding-left: 60px; ">
+
+				<li><a href="index.html" class="home">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="register-cv.html">Register CV</a></li>
+				<li><a href="search-job.html">search job</a></li>
+				<li><a href="recruit-today.html">Recruit today</a></li>
+				<li><a href="contact.html">contact us</a></li>
+				<!-- <li><a href="#">useful links</a></li> -->
+
+			</ul>
+
+
+			<ul class="float-right">
+				<!-- <li><a href="my-account.html#tab2"><i class="fa fa-user"></i> Sign Up</a></li> -->
+				<li><a href="my-account.html" class=""><i class="fa fa-lock"></i> Log In / Register </a></li>
+			</ul>
+
+		</nav>
+
+		
+
+	</div>
+</div>
+</header>
+<div class="clearfix"></div>
+
+<!-- Titlebar
+================================================== -->
+<div id="titlebar" class="single">
+	<div class="container">
+
+		<div class="sixteen columns">
+			<h2>Login / Register</h2>
+			<nav id="breadcrumbs">
+				<ul>
+					<li>You are here:</li>
+					<li><a href="#">Home</a></li>
+					<li>Login / Register</li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- Content
+================================================== -->
+
+<!-- Container -->
+<div class="container">
+
+	<div class="my-account">
+
+		<ul class="tabs-nav">
+			<li class=""><a href="#tab1">User Login</a></li>
+			<li><a href="#tab4">Company Login</a></li>
+			<li><a href="#tab2">New Employee</a></li>
+			<li><a href="#tab3">New Employeer</a></li>
+		</ul>
+
+		<div class="tabs-container" style="min-height:460px;">
+			<!-- Login -->
+			<div class="tab-content" id="tab1" style="display: none;">
+
+				<h3 class="margin-bottom-10 margin-top-10">Login</h3>
+
+
+					<p class="form-row form-row-wide">
+						<label for="email">Email Address:</label>
+						<input type="text" class="input-text" name="email" id="email" value="" />
+					</p>
+
+					<p class="form-row form-row-wide">
+						<label for="password">Password:</label>
+						<input class="input-text" type="password" name="password" id="password" />
+					</p>
+					<input type="hidden" id="account" name="account" value="user">
+					
+					
+					<p class="form-row">
+						<button class="button" name="login" onclick="loginAccount()">Login Now</button>
+					</p>
+
+
+					<p>
+					<a href="#small-dialog" class="popup-with-zoom-anim ">Forgot your login details ?</a></p>
+
+				<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
+					<div class="small-dialog-headline">
+						<h2>Reset Login</h2>
+					</div>
+
+					<div class="small-dialog-content">
+					<div class='reset_result'></div>
+							<p><strong>Please enter your email and new password</strong></p>
+							<input type="text" placeholder="Email Address" value="" id="email_reset" name="email_reset" />
+							<input type="password" placeholder="New Password" value="" id="password_reset" name="password_reset" />
+							<input type="password" placeholder="New password again" value="" id="password_again" name="password_again" />
+							
+							<input type="hidden" id="account" name="account" value="user"></input>
+							<div class="divider"></div>
+
+							<button class="send" onclick="resetPassword()">Reset Now</button>
+					</div>
+					
+				</div>
+						<br>
+						<!-- <a href="" id="displayRegister">Not Registered yet? Register Now!</a> -->
+					
+
+			</div>
+
+				<!-- Register -->
+				<div class="tab-content" id="tab2" style="display: none;">
+
+					<h3 class="margin-bottom-10 margin-top-10">New User</h3>
+
+						
+						<p class="form-row form-row-wide">
+							<label for="reg_email">First Name</label>
+							<input type="text" class="input-text" name="fname_emp" id="fname_emp" value="" />
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="reg_email">Last Name</label>
+							<input type="text" class="input-text" name="lname_emp" id="lname_emp" value="" />
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="email">Email</label>
+							<input type="text" class="input-text" name="email_emp" id="email_emp" value="" />
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="telephone">Telephone</label>
+							<input type="text" class="input-text" name="telephone_emp" id="telephone_emp" value="" />
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="reg_email">Address</label>
+							<input type="text" class="input-text" name="address_emp" id="address_emp" value="" />
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="postcode">Postcode</label>
+							<input type="text" class="input-text" name="postcode_emp" id="postcode_emp" value="" />
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="dob">Date of Birth</label>
+							<input type="date" name="dob_emp" id="dob_emp" value="" />
+						</p>
+
+
+									
+						<p class="form-row">
+							<input type="submit" class="button" name="apply" value="Register Now" onclick="registerEmployee()" />
+						</p>
+
+				</div>
+				<!-- Register -->
+
+
+
+
+
+
+
+				<div class="tab-content" id="tab3" style="display: none;">
+
+					<h3 class="margin-bottom-10 margin-top-10">New Company</h3>
+
+						
+						<p class="form-row form-row-wide">
+							<label for="company_name">Company Name</label>
+							<input type="text" placeholder="Enter the name of the company" name="com_name" id="com_name">
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="reg_email">Company Address</label>
+							<input type="text" placeholder="address of the company" name="com_address" id="com_address">
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="email">Company Postcode</label>
+							<input type="text" placeholder="e.g E13 8QF" name="com_postcode" id="com_postcode">
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="telephone">Email</label>
+							<input type="text" placeholder="abc@xyz.com" name="com_email" id="com_email">
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="reg_email">Company Telephone</label>
+							<input type="text" placeholder="Telephone number" name="com_telephone" id="com_telephone">
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="postcode">Contact Name</label>
+							<input type="text" placeholder="Contact Person name of the company" name="con_name" id="con_name">
+						</p>
+						<p class="form-row form-row-wide">
+							<label for="dob">Position</label>
+							<input type="text" placeholder="manager, ceo etc" name="con_position" id="con_position">
+						</p>
+						
+
+									
+						<p class="form-row">
+							<input type="submit" class="button" name="apply" value="Register Now" onclick='registerCompany()' />
+						</p>
+
+				</div>
+
+				<div class="tab-content" id="tab4" style="display: none;">
+
+				<h3 class="margin-bottom-10 margin-top-10">Login</h3>
+
+
+					<p class="form-row form-row-wide">
+						<label for="email">Email Address:</label>
+						<input type="text" class="input-text" name="login_com_email" id="login_com_email" value="" />
+					</p>
+
+					<p class="form-row form-row-wide">
+						<label for="password">Password:</label>
+						<input class="input-text" type="password" name="login_com_password" id="login_com_password" />
+					</p>
+					<input type="hidden" id="login_com_account" name="login_com_account" value="user">
+					
+					
+					<p class="form-row">
+						<button class="button" name="login" onclick="loginCompany()">Login Now</button>
+					</p>
+
+
+					<p>
+					<a href="#small-dialog-company" class="popup-with-zoom-anim ">Forgot your login details ?</a></p>
+
+				<div id="small-dialog-company" class="zoom-anim-dialog mfp-hide apply-popup">
+					<div class="small-dialog-headline">
+						<h2>Reset Login</h2>
+					</div>
+
+					<div class="small-dialog-content">
+					<div class='reset_result'></div>
+							<p><strong>Please enter your email and new password</strong></p>
+							<input type="text" placeholder="Email Address" value="" id="com_email_reset" name="com_email_reset" />
+							<input type="password" placeholder="New Password" value="" id="com_password_reset" name="com_password_reset" />
+							<input type="password" placeholder="New password again" value="" id="com_password_again" name="com_password_again" />
+							
+							<input type="hidden" id="com_account" name="com_account" value="company"></input>
+							<div class="divider"></div>
+
+							<button class="send" onclick="resetPasswordCompany()">Reset Now</button>
+					</div>
+					
+				</div>
+						<br>
+						<!-- <a href="" id="displayRegister">Not Registered yet? Register Now!</a> -->
+					
+
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="ajax/custom.js"></script>
+<!-- Footer
+================================================== -->
+<!-- <div class="margin-top-15"></div> -->
+
+<div id="footer">
+	<!-- Main -->
+	<div class="container">
+
+		<div class="seven columns">
+			<h4>Info</h4>
+			<p>Our Mission is to provide to our clients the best fit of resourcing and to our candidates the preferred job in the fastest and easiest way possible.</p>
+			<a href="about-us.html" class="button">Get Started</a>
+		</div>
+
+		<div class="three columns">
+			<h4>Site Map</h4>
+			<ul class="footer-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About us</a></li>
+				<li><a href="register-cv.html">Register CV</a></li>
+				<li><a href="search-job.html">Search Job</a></li>
+				<li><a href="recruit-today.html">Recruite Today</a></li>
+			</ul>
+		</div>
+		
+		<div class="three columns">
+			<h4></h4>
+
+			<ul class="footer-links" >
+				<li><a href="cookies.html" target="new">Cookies</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="terms_and_condition.html" target="new">Terms and Conditions</a></li>
+				
+			</ul>
+		</div>		
+
+		<div class="three columns">
+			<h4>Useful Links</h4>
+			<ul class="footer-links" >
+				<li><a href="https://tfl.gov.uk/" target="new">TFL</a></li>
+				<li><a href="http://www.bbc.co.uk/" target="new">BBC</a></li>
+				<li><a href="http://www.nationalrail.co.uk/" target="new">National Rail</a></li>
+				<li><a href="http://www.nhs.uk/pages/home.aspx" target="new">NHS</a></li>
+				
+
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Bottom -->
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="sixteen columns">
+				<h4>Follow Us</h4>
+								<ul class="social-icons">
+					<li><a class="facebook" href="https://www.facebook.com/colosseum.contractors/?ref=aymt_homepage_panel" target="blank"><i class="icon-facebook"></i></a></li>
+					<!-- <li><a class="twitter" href="https://www.twitter.com/colosseum.contractors"><i class="icon-twitter"></i></a></li> -->
+					<li><a class="gplus" href="mailto:colosseum.contractors1@gmail.com" target="blank"><i class="icon-gplus"></i></a></li>
+					<li><a class="instagram" href="https://www.instagram.com/colosseumcontractors/" target="blank"><i class="icon-instagram"></i></a></li>
+					<li><a class="linkedin" href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="blank"><i class="icon-linkedin"></i></a></li>
+				</ul>				<div class="copyrights">©  Copyright 2021 by <a href="#">Jobs Pal Ltd</a>. All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="scripts/jquery-2.1.3.min.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/jquery.superfish.js"></script>
+<script src="scripts/jquery.themepunch.tools.min.js"></script>
+<script src="scripts/jquery.themepunch.revolution.min.js"></script>
+<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
+<script src="scripts/jquery.flexslider-min.js"></script>
+<script src="scripts/chosen.jquery.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/waypoints.min.js"></script>
+<script src="scripts/jquery.counterup.min.js"></script>
+<script src="scripts/jquery.jpanelmenu.js"></script>
+<script src="scripts/stacktable.js"></script>
+
+<!-- WYSIWYG Editor -->
+<script type="text/javascript" src="scripts/jquery.sceditor.bbcode.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.sceditor.js"></script>
+
+<!-- Google Maps -->
+<script src="scripts/jquery.gmaps.min.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+
+			$('#googlemaps').gMap({
+				maptype: 'ROADMAP',
+				scrollwheel: false,
+				zoom: 13,
+				markers: [
+					{
+						address: 'New York, 45 Park Avenue', // Your Adress Here
+						html: '<strong>Our Office</strong><br>45 Park Avenue, Apt. 303 </br>New York, NY 10016 ',
+						popup: true,
+					}
+				],
+			});
+
+		   });
+
+	})(this.jQuery);
+</script>
+
+</body>
+
+<!-- Mirrored from jobs-pal.com/my-account.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Jul 2022 04:28:07 GMT -->
+</html>
